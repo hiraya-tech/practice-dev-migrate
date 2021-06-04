@@ -9,8 +9,8 @@ export default observer(
             return (
                 <div className="menu">
                     {
-                        this.props.menuItems.map(item => {
-                            return <div>{item.getCode()} - {item.getDesc()}</div>
+                        this.props.menuItems.map((item, index) => {
+                            return <div key={index}>{item.getCode()} - {item.getDesc()}</div>
                         })
                     }
                 </div>
