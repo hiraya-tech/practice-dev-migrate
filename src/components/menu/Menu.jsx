@@ -6,13 +6,11 @@ import "./Menu.css";
 export default observer(
     class Menu extends React.Component {
         render() {
-            console.log(this.props.menuItems);
             return (
                 <div className="menu">
-                    Menu
                     {
                         this.props.menuItems.map(item => {
-                            <div>{item.code} - {item.code}</div>
+                            return <div>{item.getCode()} - {item.getDesc()}</div>
                         })
                     }
                 </div>

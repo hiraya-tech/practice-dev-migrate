@@ -19,7 +19,10 @@ ModelApp.setToken = function(value) {
 }
 
 ModelApp.loadMenuItems = async function() {
-    await this.menuItems.push(ModelMenu.createMenuItem("a", "Menu Item A"));
+    let m1 = Object.assign(ModelMenu)
+    m1.setCode("m1");
+    m1.setDesc("Menu Item 1");
+    await this.menuItems.push(m1);
 }
 
 export default ModelApp;
