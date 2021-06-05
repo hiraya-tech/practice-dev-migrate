@@ -1,9 +1,11 @@
 import React from 'react';
 import { observer } from "mobx-react";
 
+import Header from '../components/header/Header';
 import Menu from '../components/menu/Menu'
 
 import './App.css';
+
 
 export default observer(
   class App extends React.Component {
@@ -16,6 +18,7 @@ export default observer(
       
       return (
         <div className="app">
+          <Header />
           <Menu menuItems={menuItems} />
           <div className="app-content">
             Test

@@ -1,7 +1,15 @@
-.app {
-  text-align: center;
+html, body, .app {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
 }
 
 .app-content {
-  background-color: yellow;
+  width: calc(100% - 400px);
+  height: calc(100% - 150px);
+  background-color: #f0f8ff;
+  padding: 100px 50px 50px 350px;
+  z-index: 1;
 }

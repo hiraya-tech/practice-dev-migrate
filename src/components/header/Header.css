@@ -1,0 +1,9 @@
+.header {
+  background-color: #00ffff;
+  position: fixed;
+  display: inline-block;
+  width: 100vw;
+  height: 50px;
+  z-index: 5;
+  text-align: center;
+}

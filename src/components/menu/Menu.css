@@ -1,3 +1,11 @@
-.menu {
-    background-color: pink;
+.menu {  
+    background-color: #c0c0c0;
+    position: fixed;
+    display:  inline-block;
+    margin-top: 50px;
+    padding-top: 25px;
+    height: calc(100% - 75px);
+    width: 300px;
+    z-index: 4;
+    text-align: center;
 }
